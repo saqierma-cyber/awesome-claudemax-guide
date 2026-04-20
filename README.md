@@ -87,45 +87,7 @@ https://claudemax.shop
 
 ## 💻 API集成示例
 
-### Python示例
 
-```python
-import anthropic
-
-# 初始化客户端（使用ClaudeMax充值的账号）
-client = anthropic.Anthropic(api_key="your-api-key")
-
-# 调用Claude Pro
-response = client.messages.create(
-    model="claude-opus-4-1-20250805",
-    max_tokens=1024,
-    messages=[
-        {"role": "user", "content": "Hello, Claude!"}
-    ]
-)
-
-print(response.content[0].text)
-
-avaScript/Node.js示例
-import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
-
-async function main() {
-  const message = await client.messages.create({
-    model: "claude-opus-4-1-20250805",
-    max_tokens: 1024,
-    messages: [
-      { role: "user", content: "Hello, Claude!" }
-    ],
-  });
-
-  console.log(message.content[0].type === "text" && message.content[0].text);
-}
-
-main();
 
 
 
