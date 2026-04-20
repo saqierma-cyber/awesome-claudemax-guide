@@ -86,6 +86,45 @@ https://claudemax.shop
 - 账户登录即可使用
 
 ## 💻 API集成示例
+### Python示例
+
+```python
+import anthropic
+
+# 初始化客户端（使用ClaudeMax充值的账号）
+client = anthropic.Anthropic(api_key="your-api-key")
+
+# 调用Claude Pro
+response = client.messages.create(
+    model="claude-opus-4-1-20250805",
+    max_tokens=1024,
+    messages=[
+        {"role": "user", "content": "Hello, Claude!"}
+    ]
+)
+
+print(response.content[0].text)
+
+avaScript/Node.js示例
+import Anthropic from "@anthropic-ai/sdk";
+
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+async function main() {
+  const message = await client.messages.create({
+    model: "claude-opus-4-1-20250805",
+    max_tokens: 1024,
+    messages: [
+      { role: "user", content: "Hello, Claude!" }
+    ],
+  });
+
+  console.log(message.content[0].type === "text" && message.content[0].text);
+}
+
+main();
 
 
 
@@ -93,29 +132,28 @@ https://claudemax.shop
 
 
 
-
-###场景1: Prompt工程师月入¥5000+
+## 场景1: Prompt工程师月入¥5000+
 如果你用Claude做Prompt工程、做AI创作内容：
 
 日常消耗: 50-100次API调用
 月均费用: Claude Pro ¥210足够
 建议方案: Pro ¥210/月
 成本对比: 虚拟卡方案至少¥280+
-###场景2: 技术博主/讲师
+## 场景2: 技术博主/讲师
 如果你做AI教学、录视频、写教程：
 
 日常消耗: 200-500次API调用
 需要多个Demo账号
 建议方案: Max 5x ¥980/月 (2-3个账号)
 成本对比: 官方$200×3=¥2800+ (无法购买)
-###场景3: 企业/团队
+## 场景3: 企业/团队
 如果你是创业公司或外包团队：
 
 日常消耗: 1000+次API调用
 需要稳定高速响应
 建议方案: Max 5x ¥980/月 (多账号方案)
 成本对比: 官方无法提供团队方案
-###🔗 有用的资源
+## 🔗 有用的资源
 Claude官方文档https://platform.claude.com/docs/en/home
 ClaudeMax官网https://claudemax.shop
 Claude API参考https://platform.claude.com/docs/reference/getting-started-with-the-api
@@ -131,7 +169,7 @@ Thinking Mode - 深度思考模式
 Extended Context - 超长文本处理
 整本书、整个代码库一次性分析
 长文档翻译维持上下文连贯
-###📞 联系方式
+## 📞 联系方式
 🌐 网站: https://claudemax.shop
 💬 微信客服: 立即联系（页面查询）
 📧 邮件: support@claudemax.shop
