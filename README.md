@@ -105,3 +105,24 @@ response = client.messages.create(
 )
 
 print(response.content[0].text)
+
+avaScript/Node.js示例
+import Anthropic from "@anthropic-ai/sdk";
+
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+async function main() {
+  const message = await client.messages.create({
+    model: "claude-opus-4-1-20250805",
+    max_tokens: 1024,
+    messages: [
+      { role: "user", content: "Hello, Claude!" }
+    ],
+  });
+
+  console.log(message.content[0].type === "text" && message.content[0].text);
+}
+
+main();
