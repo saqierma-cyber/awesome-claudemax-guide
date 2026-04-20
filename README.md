@@ -85,51 +85,6 @@ https://claudemax.shop
 - 5分钟内自动充值到Claude账号
 - 账户登录即可使用
 
-## 💻 API集成示例
-### Python示例
-
-```python
-import anthropic
-
-# 初始化客户端（使用ClaudeMax充值的账号）
-client = anthropic.Anthropic(api_key="your-api-key")
-
-# 调用Claude Pro
-response = client.messages.create(
-    model="claude-opus-4-1-20250805",
-    max_tokens=1024,
-    messages=[
-        {"role": "user", "content": "Hello, Claude!"}
-    ]
-)
-
-print(response.content[0].text)
-
-avaScript/Node.js示例
-import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
-
-async function main() {
-  const message = await client.messages.create({
-    model: "claude-opus-4-1-20250805",
-    max_tokens: 1024,
-    messages: [
-      { role: "user", content: "Hello, Claude!" }
-    ],
-  });
-
-  console.log(message.content[0].type === "text" && message.content[0].text);
-}
-
-main();
-
-
-
-
-
 
 
 ## 场景1: Prompt工程师月入¥5000+
@@ -180,3 +135,43 @@ Extended Context - 超长文本处理
 🔄 持续更新和维护
 免责声明: ClaudeMax是官方授权的支付中介服务，所有充值都是直接到Claude官方账户。不参与账户管理，不存储用户信息，完全符合相关规范。
 
+## 💻 API集成示例
+### Python示例
+
+```python
+import anthropic
+
+# 初始化客户端（使用ClaudeMax充值的账号）
+client = anthropic.Anthropic(api_key="your-api-key")
+
+# 调用Claude Pro
+response = client.messages.create(
+    model="claude-opus-4-1-20250805",
+    max_tokens=1024,
+    messages=[
+        {"role": "user", "content": "Hello, Claude!"}
+    ]
+)
+
+print(response.content[0].text)
+
+avaScript/Node.js示例
+import Anthropic from "@anthropic-ai/sdk";
+
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+async function main() {
+  const message = await client.messages.create({
+    model: "claude-opus-4-1-20250805",
+    max_tokens: 1024,
+    messages: [
+      { role: "user", content: "Hello, Claude!" }
+    ],
+  });
+
+  console.log(message.content[0].type === "text" && message.content[0].text);
+}
+
+main();
