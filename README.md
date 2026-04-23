@@ -140,6 +140,7 @@ Extended Context - 超长文本处理
 📊 99.9%用户满意度
 🔄 持续更新和维护
 免责声明: ClaudeMax是官方授权的支付中介服务，所有充值都是直接到Claude官方账户。不参与账户管理，不存储用户信息，完全符合相关规范。
+<img width="300" height="168" alt="Claude Pro 代充值推荐 2026" src="https://github.com/user-attachments/assets/369691cc-9679-4005-babf-2d4479b0ccac" />
 
 
 ## 方案二：跟别人拼车合租（适合轻度使用者）
@@ -194,4 +195,3 @@ async function main() {
 }
 
 main();
-<img width="300" height="168" alt="Claude Pro 代充值推荐 2026" src="https://github.com/user-attachments/assets/369691cc-9679-4005-babf-2d4479b0ccac" />
