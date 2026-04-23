@@ -183,7 +183,7 @@ async function main() {
 main();
 <img width="300" height="168" alt="Claude Pro 代充值推荐 2026" src="https://github.com/user-attachments/assets/369691cc-9679-4005-babf-2d4479b0ccac" />
 
-方案二：跟别人拼车合租（适合轻度使用者）
+## 方案二：跟别人拼车合租（适合轻度使用者）
 
 如果你用Claude Pro的频率没那么高，或者一直解决不了网络问题，合租确实是最便宜的选择。这种Claude账号合租服务不用科学上网，也不用你自己注册Claude账号，平台给你一个子账号直接用。价格确实香（我看到有20块起步的），而且封号风险几乎为零。不过得接受和别人共享额度，高峰期偶尔要排队，用着偶尔会觉得不爽。
 
@@ -191,6 +191,6 @@ main();
 
 <img width="330" height="153" alt="Claude Pro 代充值 最新 微信支付宝" src="https://github.com/user-attachments/assets/5f244a10-8162-49bd-a309-c943d461b891" />
 
-方案三：直接买个 Claude Pro 成品号（不愿意折腾，其实这种方法和Claude代充大同小异）
+## 方案三：直接买个 Claude Pro 成品号（不愿意折腾，其实这种方法和Claude代充大同小异）
 
 如果你还没 Claude 账号，或者懒得自己折腾订阅，可以直接买个已经充好值的 Claude Max 独立账号。这种Claude Max账号拿来就能用，不用注册、不用绑卡，所有功能都是完整的。我自己测试了几个平台，找靠谱的买基本上没出过问题。价格虽然比原价高一点，但省心的确是真省心。 
